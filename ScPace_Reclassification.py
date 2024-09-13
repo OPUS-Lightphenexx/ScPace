@@ -14,8 +14,6 @@ def scpace(data, data_test, labels, labels_test, C, num_iteration, p, reduce,dat
     C = C
     pca = PCA(n_components=0.7)
     from sklearn.decomposition import KernelPCA
-
-    pca_kernel = KernelPCA()
     if reduce == None:
         data_no_moving_scpace = data
     if reduce == "pca":
@@ -36,18 +34,8 @@ def scpace(data, data_test, labels, labels_test, C, num_iteration, p, reduce,dat
         data_no_moving_scpace = data
 
     if reduce == "kernel":
-        pca_kernel.fit_transform(data)
-        d = pca.n_components_
-        real_m = 0
-        if d < 10:
-            real_m = 10
-        if 10 <= d <= 20:
-            real_m = d
-        if d > 20:
-            real_m = 20
-        from sklearn.decomposition import KernelPCA
 
-        pca2 = KernelPCA(n_components=real_m)
+        pca2 = KernelPCA(n_components=20)
 
         data = pca2.fit_transform(data)
         data_test = pca2.transform(data_test)
