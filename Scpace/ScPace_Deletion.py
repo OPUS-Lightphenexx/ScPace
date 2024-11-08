@@ -11,32 +11,9 @@ from sklearn.metrics import balanced_accuracy_score
 def scpace(data, labels, C, num_iteration, p, reduce,lam):
     est = SVC(C=1, kernel='rbf', class_weight='balanced')
     C = C
-    pca = PCA(n_components=2)
     labels_no_moving = labels
-    from sklearn.decomposition import KernelPCA
-    if reduce == None:
-        data_no_moving_scpace = data
-    if reduce == "pca":
-        pca.fit_transform(data)
-        d = pca.n_components_
-        real_m = 0
-        if d < 10:
-            real_m = 10
-        if 10 <= d <= 20:
-            real_m = d
-        if d > 20:
-            real_m = 20
+    data_no_moving_scpace = data
 
-        pca2 = PCA(n_components=real_m)
-
-        data = pca2.fit_transform(data)
-        data_no_moving_scpace = data
-
-    if reduce == "kernel":
-        pca2 = KernelPCA(n_components=20)
-
-        data = pca2.fit_transform(data)
-        data_no_moving_scpace = data
     score_max_list = []
     for i in range(num_iteration):
         C = C + p
