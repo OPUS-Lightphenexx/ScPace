@@ -8,12 +8,9 @@ from sklearn.metrics import hinge_loss
 from sklearn.decomposition import PCA
 from sklearn.metrics import balanced_accuracy_score
 
-<<<<<<< HEAD:Scpace/ScPace.py
 
-def ScPace(data, labels, C, num_iteration, p, lam, method):
-=======
 def scpace(data, labels, C, num_iteration, p,lam,method):
->>>>>>> 4436b71febc82f3f667c9f6f26673f176d70784b:Scpace/ScPace_Deletion.py
+
     est = SVC(C=1, kernel='rbf', class_weight='balanced')
     C = C
     labels_no_moving = labels
@@ -73,15 +70,5 @@ def scpace(data, labels, C, num_iteration, p,lam,method):
             data = kill_data_using_v(data_no_moving_scpace, v_list)
             labels = kill_label_using_v(labels_no_moving, v_list)
 
-<<<<<<< HEAD:Scpace/ScPace.py
-        if methods == "reclassify":
-            data = data_no_moving
-            labels = est.predict(labels_no_moving)
-        if methods == "deletion":
-            data = kill_data_using_v(data_no_moving_scpace, v_list)
-            labels = kill_label_using_v(labels_no_moving, v_list)
-
-    return data, labels
-=======
     return data ,labels
->>>>>>> 4436b71febc82f3f667c9f6f26673f176d70784b:Scpace/ScPace_Deletion.py
+
