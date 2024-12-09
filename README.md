@@ -1,6 +1,6 @@
 # ScPace: Timestamp Calibration for time-series ScRNA-seq expression data
 
-We present ScPace, a novel approach for timestamp calibration in time-series single-cell RNA sequencing (scRNA-seq) data. This method tackles the significant issue of noisy timestamps, which can undermine the accuracy of timestamp automatic annotation (TAA) and interfere with downstream analyses, such as supervised pseudotime analysis. ScPace leverages a latent variable indicator within a support vector machine (SVM) framework to efficiently identify and correct mislabeled samples, improving the robustness and reliability of results across a range of time-series ScRNA-seq datasets.
+We present ScPace, a novel approach for timestamp calibration in time-series single-cell RNA sequencing (scRNA-seq) data. This method tackles the significant issue of noisy timestamps in time-series ScRNA-seq data, which can undermine the accuracy of timestamp automatic annotation (TAA) and interfere with downstream analyses, such as supervised pseudotime analysis. ScPace leverages a latent variable indicator within a support vector machine (SVM) framework to efficiently identify and correct mislabeled samples, improving the robustness and reliability of results across a range of time-series ScRNA-seq datasets.
 
 # Input
 
