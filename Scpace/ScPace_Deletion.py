@@ -8,7 +8,7 @@ from sklearn.metrics import hinge_loss
 from sklearn.decomposition import PCA
 from sklearn.metrics import balanced_accuracy_score
 
-def scpace(data, labels, C, num_iteration, p, reduce,lam):
+def scpace(data, labels, C, num_iteration, p,lam,method):
     est = SVC(C=1, kernel='rbf', class_weight='balanced')
     C = C
     labels_no_moving = labels
@@ -60,8 +60,12 @@ def scpace(data, labels, C, num_iteration, p, reduce,lam):
             return np.array(final_list)
 
         v_list = convert_v(loss, lam)
-
-        data = kill_data_using_v(data_no_moving_scpace, v_list)
-        labels = kill_label_using_v(labels_no_moving, v_list)
+        
+        if methods == "reclassify":
+            data = data_no_moving
+            labels = est.predict(labels_no_moving)
+        if methods == "deletion":
+            data = kill_data_using_v(data_no_moving_scpace, v_list)
+            labels = kill_label_using_v(labels_no_moving, v_list)
 
     return data ,labels
