@@ -11,7 +11,7 @@ We present ScPace, a novel approach for timestamp calibration in time-series sin
 # Input
 
 - `data`: The input time-series ScRNA-seq expression matrix.
-- `labels`: Time-labels for each cells(Numpy Series)
+- `labels`: Time-labels for each cells(Numpy Ndarray)
 - `C`: The regularization parameter for SVM
 - `num_iteration`: Numbers of iterations to perform ScPace
 - `p`: The C-Growing Parameter
