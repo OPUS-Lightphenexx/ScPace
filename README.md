@@ -7,7 +7,7 @@ We present ScPace, a novel approach for timestamp calibration in time-series sin
 - `ScPace/Hinge_Loss`: Computes Hinge Loss for each Samples
 - `Simulated Datasets`: Simulated datasets using Splatter
 
-
+![graph_abstract](https://github.com/user-attachments/assets/ebd03d6c-2935-4d8a-bbc3-c73c10f49eb3)
 # Input
 
 - `data`: The input time-series ScRNA-seq expression matrix.
