@@ -20,6 +20,6 @@ We present ScPace, a novel approach for timestamp calibration in time-series sin
 - `methods`: reclassify/deletion
 
 ## Paper
-Arxiv: [Timestamp calibration for time-series single cell RNA-seq expression data](https://arxiv.org/abs/2412.03027)
-Researchgate: [Timestamp calibration for time-series single cell RNA-seq expression data]([https://arxiv.org/abs/2412.03027](https://www.researchgate.net/publication/386426329_Timestamp_calibration_for_time-series_single_cell_RNA-seq_expression_data))
-Supplementary files: [Supplementary](https://www.researchgate.net/publication/389051068_SupplementaryScPacedocx?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjpudWxsLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19)
+- Arxiv: [Timestamp calibration for time-series single cell RNA-seq expression data](https://arxiv.org/abs/2412.03027)
+- Researchgate: [Timestamp calibration for time-series single cell RNA-seq expression data](https://www.researchgate.net/publication/386426329_Timestamp_calibration_for_time-series_single_cell_RNA-seq_expression_data)
+- Supplementary files: [Supplementary](https://www.researchgate.net/publication/389051068_SupplementaryScPacedocx?_tp=eyJjb250ZXh0Ijp7InBhZ2UiOiJwcm9maWxlIiwicHJldmlvdXNQYWdlIjpudWxsLCJwb3NpdGlvbiI6InBhZ2VDb250ZW50In19)
