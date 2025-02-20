@@ -1,6 +1,6 @@
 # ScPace: Timestamp Calibration for time-series ScRNA-seq expression data
 
-> **Timestamp Calibration for time-series ScRNA-seq expression data**<br>
+> **Timestamp Calibration for time-series single cell RNA-seq expression data**<br>
 >  Journal of Molecular Biology 2025<br>
 
 > **Abstract:** 
