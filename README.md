@@ -3,6 +3,7 @@
 > **Timestamp Calibration for time-series single cell RNA-seq expression data**<br>
 >  Xiran Chen, Sha Lin, Xiaofeng Chen, Weikai Li*, Yifei Li*<br>
 >  Journal of Molecular Biology 2025<br>
+>  DOI: https://doi.org/10.1016/j.jmb.2025.169021<br>
 
 > **Abstract:** 
 >
