@@ -48,3 +48,5 @@ We present ScPace, a novel approach for timestamp calibration in time-series sin
 - `lam`: Threshold for updating the latent variables
 - `methods`: reclassify/deletion
 
+# Contact
+lightphenexx@outlook.com
